@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.demo.androidjavatutorial">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.location.network"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AndroidJavaTutorial"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name="com.demo.androidjavatutorial.CameraImage.CameraImageActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.demo.androidjavatutorial.ChipTagView.TagActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.demo.androidjavatutorial.Excel.ExcelActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.demo.androidjavatutorial.UploadPdf.UploadPdfActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.demo.androidjavatutorial.UploadPdfVolleyApi.UploadPdfVolleyApiActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.demo.androidjavatutorial.UploadImage.UploadImageActivity"
+            android:exported="false" />
+
+        <uses-library android:name="com.google.android.maps" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBtnrzIQpD4MqzvmkeaQdbGUngVZ8YNpwQ" />
+
+        <activity
+            android:name="com.demo.androidjavatutorial.GoogleMapSearch.MapSearchActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.demo.androidjavatutorial.ExpandableRecyclerView.ExpandableRecyclerViewActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.demo.androidjavatutorial.ImageSlider.ImageSliderActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.demo.androidjavatutorial.SelectUserChk.SelectUserActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.demo.androidjavatutorial.MultipalDataSelect.MultipalDataSelectActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Design.NoActionBar" />
+        <activity
+            android:name="com.demo.androidjavatutorial.RetrofitDemo.Activity.ThiredActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Design.NoActionBar" />
+        <activity
+            android:name="com.demo.androidjavatutorial.RetrofitDemo.Activity.PhotoActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Design.NoActionBar" />
+        <activity
+            android:name="com.demo.androidjavatutorial.RetrofitDemo.Activity.AlbumActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Design.NoActionBar" />
+        <activity
+            android:name="com.demo.androidjavatutorial.RetrofitDemo.RetrofitApiActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Design.NoActionBar" />
+        <activity
+            android:name="com.demo.androidjavatutorial.Sqlite.SqliteActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.demo.androidjavatutorial.Retrofit.RetrofitActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.demo.androidjavatutorial.Volley.VolleyActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.demo.androidjavatutorial.MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

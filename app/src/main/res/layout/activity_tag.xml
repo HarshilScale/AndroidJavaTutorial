@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.demo.androidjavatutorial.ChipTagView.TagActivity">
+
+    <com.demo.androidjavatutorial.ChipTagView.TagView.ContactsCompletionView
+        android:id="@+id/tagView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_aboutUs"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edt_bg"
+        android:focusableInTouchMode="true"
+        android:gravity="start"
+        android:hint="Enter Text"
+        android:imeOptions="actionDone"
+        android:inputType="text|textNoSuggestions|textMultiLine"
+        android:lineSpacingExtra="5dp"
+        android:minHeight="100dp"
+        android:nextFocusDown="@+id/editText"
+        android:padding="15dp"
+        android:textColor="@android:color/darker_gray"
+        android:textColorHint="#AAAAAA"
+        android:textSize="14dp" />
+
+
+    <TextView
+        android:id="@+id/lastEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tagView"
+        android:layout_marginTop="20dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lastEvent"
+        android:layout_marginTop="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:visibility="visible" />
+</LinearLayout>

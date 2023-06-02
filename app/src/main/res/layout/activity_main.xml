@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.demo.androidjavatutorial.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/purple_700">
+
+        <TextView
+            android:id="@+id/txtMarquee"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="Hello guys !! Welcome to Android AdvanceTutorial !!"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/txt_timestamp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:textColorHint="@color/black"
+                android:textSize="18sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnCameraImages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Camera Upload" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnVolley"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Volley" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnRetrofit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Retrofit" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSqlite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sqlite" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnRetrofitAppDemo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Retrofit App " />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnMultipalDataSelect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MultipalDataSelect" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSelectUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SelectUser" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnslider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ImageSlider" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnexpan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ExpandableRecyclerView" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnMapSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Googlemap Search" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnUploadImg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upload Image" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnUploadPDF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upload PDF" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnUploadPDFVolleyApi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upload PDF Volley Api" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnUploadExcel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upload Excel" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnTagView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TagView" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
